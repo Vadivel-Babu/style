@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Roboto:wght@100;300;500&display=swap');
+.news{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 1rem;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.news > h3{
+    margin-top: 7rem;
+    font-size: 1.5rem;
+}
+.news > h1{
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+.news > p{
+    text-align: center;
+    line-height: 1.6;
+    padding: 0.5rem;
+    font-weight: 300;
+}
+.news-1{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.news-1 > h2{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+.news-1 > a{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    color: black;
+    border: 1px solid var(--primary-color);
+    transition: all 0.2s linear;
+}
+.news-1 a:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+@media (min-width:50rem){
+    .news > p{
+        padding: 0 10rem;
+    }
+    .news-1{
+        display: grid;
+        grid-template-columns: 60% 35%;
+        grid-template-rows: 0.2fr 1fr;
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .news-1 .grid-span{
+        height: 3rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    .news-1 a{
+        width: 8rem;
+        height: 2.5rem;       
+        margin: 5rem 4rem;
+    }
+    .news-1 p{     
+        height: 13rem;
+        padding:1rem 1.5rem;
+    }
+    
+}
